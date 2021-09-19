@@ -89,6 +89,18 @@
 		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.h">
 			<Option target="textbased_rpg"/>
 		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/City.cpp">
+			<Option target="textbased_rpg"/>
+		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/City.h">
+			<Option target="textbased_rpg"/>
+		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Country.cpp">
+			<Option target="textbased_rpg"/>
+		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Country.h">
+			<Option target="textbased_rpg"/>
+		</Unit>
 		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.cpp">
 			<Option target="textbased_rpg"/>
 		</Unit>

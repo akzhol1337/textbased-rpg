@@ -9,6 +9,9 @@ class City {
 public:
     std::string title;
     std::vector<Character> citizens;
+
+    City(std::string title);
+    void addCitizen(Character citizen);
 };
 
 

@@ -197,6 +197,60 @@ model/entity/Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.s
 .PHONY : model/entity/Character.cpp.s
 
+model/entity/City.o: model/entity/City.cpp.o
+
+.PHONY : model/entity/City.o
+
+# target to build an object file
+model/entity/City.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/City.cpp.o
+.PHONY : model/entity/City.cpp.o
+
+model/entity/City.i: model/entity/City.cpp.i
+
+.PHONY : model/entity/City.i
+
+# target to preprocess a source file
+model/entity/City.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/City.cpp.i
+.PHONY : model/entity/City.cpp.i
+
+model/entity/City.s: model/entity/City.cpp.s
+
+.PHONY : model/entity/City.s
+
+# target to generate assembly for a file
+model/entity/City.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/City.cpp.s
+.PHONY : model/entity/City.cpp.s
+
+model/entity/Country.o: model/entity/Country.cpp.o
+
+.PHONY : model/entity/Country.o
+
+# target to build an object file
+model/entity/Country.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Country.cpp.o
+.PHONY : model/entity/Country.cpp.o
+
+model/entity/Country.i: model/entity/Country.cpp.i
+
+.PHONY : model/entity/Country.i
+
+# target to preprocess a source file
+model/entity/Country.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Country.cpp.i
+.PHONY : model/entity/Country.cpp.i
+
+model/entity/Country.s: model/entity/Country.cpp.s
+
+.PHONY : model/entity/Country.s
+
+# target to generate assembly for a file
+model/entity/Country.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Country.cpp.s
+.PHONY : model/entity/Country.cpp.s
+
 model/entity/Item.o: model/entity/Item.cpp.o
 
 .PHONY : model/entity/Item.o
@@ -266,6 +320,12 @@ help:
 	@echo "... model/entity/Character.o"
 	@echo "... model/entity/Character.i"
 	@echo "... model/entity/Character.s"
+	@echo "... model/entity/City.o"
+	@echo "... model/entity/City.i"
+	@echo "... model/entity/City.s"
+	@echo "... model/entity/Country.o"
+	@echo "... model/entity/Country.i"
+	@echo "... model/entity/Country.s"
 	@echo "... model/entity/Item.o"
 	@echo "... model/entity/Item.i"
 	@echo "... model/entity/Item.s"

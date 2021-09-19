@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/undefined/CLionProjects/textbased-rpg/main.cpp" "/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles/textbased_rpg.dir/main.cpp.o"
   "/Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.cpp" "/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o"
+  "/Users/undefined/CLionProjects/textbased-rpg/model/entity/City.cpp" "/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles/textbased_rpg.dir/model/entity/City.cpp.o"
+  "/Users/undefined/CLionProjects/textbased-rpg/model/entity/Country.cpp" "/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles/textbased_rpg.dir/model/entity/Country.cpp.o"
   "/Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.cpp" "/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o"
   "/Users/undefined/CLionProjects/textbased-rpg/view/Application.cpp" "/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles/textbased_rpg.dir/view/Application.cpp.o"
   )
