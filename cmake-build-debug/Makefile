@@ -170,6 +170,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/entity/Character.o: model/entity/Character.cpp.o
+
+.PHONY : model/entity/Character.o
+
+# target to build an object file
+model/entity/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o
+.PHONY : model/entity/Character.cpp.o
+
+model/entity/Character.i: model/entity/Character.cpp.i
+
+.PHONY : model/entity/Character.i
+
+# target to preprocess a source file
+model/entity/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.i
+.PHONY : model/entity/Character.cpp.i
+
+model/entity/Character.s: model/entity/Character.cpp.s
+
+.PHONY : model/entity/Character.s
+
+# target to generate assembly for a file
+model/entity/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.s
+.PHONY : model/entity/Character.cpp.s
+
+model/entity/Item.o: model/entity/Item.cpp.o
+
+.PHONY : model/entity/Item.o
+
+# target to build an object file
+model/entity/Item.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o
+.PHONY : model/entity/Item.cpp.o
+
+model/entity/Item.i: model/entity/Item.cpp.i
+
+.PHONY : model/entity/Item.i
+
+# target to preprocess a source file
+model/entity/Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.i
+.PHONY : model/entity/Item.cpp.i
+
+model/entity/Item.s: model/entity/Item.cpp.s
+
+.PHONY : model/entity/Item.s
+
+# target to generate assembly for a file
+model/entity/Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/textbased_rpg.dir/build.make CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.s
+.PHONY : model/entity/Item.cpp.s
+
 view/Application.o: view/Application.cpp.o
 
 .PHONY : view/Application.o
@@ -209,6 +263,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/entity/Character.o"
+	@echo "... model/entity/Character.i"
+	@echo "... model/entity/Character.s"
+	@echo "... model/entity/Item.o"
+	@echo "... model/entity/Item.i"
+	@echo "... model/entity/Item.s"
 	@echo "... view/Application.o"
 	@echo "... view/Application.i"
 	@echo "... view/Application.s"

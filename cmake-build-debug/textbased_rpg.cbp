@@ -83,6 +83,18 @@
 		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/main.cpp">
 			<Option target="textbased_rpg"/>
 		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.cpp">
+			<Option target="textbased_rpg"/>
+		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.h">
+			<Option target="textbased_rpg"/>
+		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.cpp">
+			<Option target="textbased_rpg"/>
+		</Unit>
+		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.h">
+			<Option target="textbased_rpg"/>
+		</Unit>
 		<Unit filename="/Users/undefined/CLionProjects/textbased-rpg/view/Application.cpp">
 			<Option target="textbased_rpg"/>
 		</Unit>

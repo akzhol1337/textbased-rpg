@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/textbased_rpg.dir/main.cpp.o"
+  "CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o"
+  "CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o"
   "CMakeFiles/textbased_rpg.dir/view/Application.cpp.o"
   "textbased_rpg"
   "textbased_rpg.pdb"

@@ -103,19 +103,49 @@ CMakeFiles/textbased_rpg.dir/view/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textbased_rpg.dir/view/Application.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/undefined/CLionProjects/textbased-rpg/view/Application.cpp -o CMakeFiles/textbased_rpg.dir/view/Application.cpp.s
 
+CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o: CMakeFiles/textbased_rpg.dir/flags.make
+CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o: ../model/entity/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o -c /Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.cpp
+
+CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.cpp > CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.i
+
+CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.cpp -o CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.s
+
+CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o: CMakeFiles/textbased_rpg.dir/flags.make
+CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o: ../model/entity/Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o -c /Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.cpp
+
+CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.cpp > CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.i
+
+CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.cpp -o CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.s
+
 # Object files for target textbased_rpg
 textbased_rpg_OBJECTS = \
 "CMakeFiles/textbased_rpg.dir/main.cpp.o" \
-"CMakeFiles/textbased_rpg.dir/view/Application.cpp.o"
+"CMakeFiles/textbased_rpg.dir/view/Application.cpp.o" \
+"CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o" \
+"CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o"
 
 # External object files for target textbased_rpg
 textbased_rpg_EXTERNAL_OBJECTS =
 
 textbased_rpg: CMakeFiles/textbased_rpg.dir/main.cpp.o
 textbased_rpg: CMakeFiles/textbased_rpg.dir/view/Application.cpp.o
+textbased_rpg: CMakeFiles/textbased_rpg.dir/model/entity/Character.cpp.o
+textbased_rpg: CMakeFiles/textbased_rpg.dir/model/entity/Item.cpp.o
 textbased_rpg: CMakeFiles/textbased_rpg.dir/build.make
 textbased_rpg: CMakeFiles/textbased_rpg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable textbased_rpg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/undefined/CLionProjects/textbased-rpg/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable textbased_rpg"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/textbased_rpg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

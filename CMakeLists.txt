@@ -3,4 +3,4 @@ project(textbased_rpg)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(textbased_rpg main.cpp view/Application.cpp view/Application.h)
+add_executable(textbased_rpg main.cpp view/Application.cpp view/Application.h model/entity/Character.cpp model/entity/Character.h model/entity/Item.cpp model/entity/Item.h)
