@@ -1,4 +1,5 @@
 <h2>Technical Specification</h2>
+<hr>
 <strong>Creation of new character</strong>
 
 In the beginning you have three choices, to start a new game, to start a saved game and to exit. 
@@ -33,6 +34,7 @@ go home to relax and restore hp.
 Exit from a game
 
 <h2>Classes:</h2>
+<hr>
 <strong>Application:</strong>     
 Application it is a class where all logic located. Main menu, fighting and other stuff.
 
@@ -51,10 +53,11 @@ In the city we store name and citizens just like in country class, also there ar
 
 
 <h2>Codes:</h2>   
+<hr>
 You can find all codes in this repository
 
 <h2>Provide 4 screenshots:</h2>   
-
+<hr>
 <p align="center">
   <img src="imgs/log1.jpeg" width="350" >
   <img src="imgs/stats1.png" width="350" >
