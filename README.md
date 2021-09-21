@@ -1,5 +1,5 @@
-Technical Specification
-Creation of new character
+<h2>Technical Specification</h2>
+<strong>Creation of new character</strong>
 
 In the beginning you have three choices, to start a new game, to start a saved game and to exit. 
 The saved games, it is just option that we may add to game in the future. 
@@ -7,48 +7,72 @@ It will save information of every main character that is created before in the g
 When you choose the first one you should create main character for the game with maximum hp, hp, name, attack, experience, level, gold.
 Then main character can choose what to do next. There are 7 choices. Notice that in every selection has option going back or quit.
 
-1.Map: Where he can go to some cities to struggle with other strong characters, 
+<strong>1.Map:</strong>  
+Where he can go to some cities to struggle with other strong characters, 
 Firstly, there is a country. Here you will choose the city, then also enemies in cities. 
 And if you win the enemy, main character will level up, gain experience and gold. 
 Also, you can take the weapons of enemy by adding to inventory.
 
-2.Inventory: Shows inventory of character.  And character can store only best 3 items. 
+<strong>2.Inventory:</strong>  
+Shows inventory of character.  And character can store only best 3 items. 
 Also, each item has damage, depending on this damage the price will increase. Item from inventory increases total damage of a character.
 
-3.Statistics: Shows statistics. It’s just showing information about main character. HP, gold, damage and other stuff.
+<strong>3.Statistics:</strong>  
+Shows statistics. It’s just showing information about main character. HP, gold, damage and other stuff.
 
-4.Shop. Here character can buy weapon by his golds. As written before inventory can store only 3 items.
+<strong>4.Shop:</strong>   
+Here character can buy weapon by his golds. As written before inventory can store only 3 items.
 
-5.Work. By working he can earn the golds. It doesn’t have any job, character just works and getting money.
+<strong>5.Work:</strong>   
+By working he can earn the golds. It doesn’t have any job, character just works and getting money.
 
-6.Go home. go home to relax and restore hp. 
+<strong>6.Go home:</strong>  
+go home to relax and restore hp. 
 
-7.Quit.
+<strong>7.Quit:</strong>  
+Exit from a game
 
-Classes:
-Application:
+<h2>Classes:</h2>
+<strong>Application:</strong>  
 Application it is a class where all logic located. Main menu, fighting and other stuff.
 
-Character:
+<strong>Character:</strong>  
 Character is class which stores information and methods of characters. Information like hp, damage and other.
 Methods like add item to inventory, show Statistics, check if we may level up, etc.
 
-Item:
+<strong>Item:</strong>   
 It’s information about weapon. We store fields like name, damage, and price.
 
-Country:
+<strong>Country:</strong>  
 In this class we store a name of country and a list of cities.
 
-City:
+<strong>City:</strong>   
 In the city we store name and citizens just like in country class, also there are a method to show information about city and add citizens to it.
 
 
-Codes:
+<h2>Codes:</h2>   
 You can find all codes in this repository
 
-Provide 4 screenshots:
+<h2>Provide 4 screenshots:</h2>   
 
 <p align="center">
   <img src="imgs/log1.jpeg" width="350" >
   <img src="imgs/stats1.png" width="350" >
 </p>
+
+<p align="center">
+  <img src="imgs/log2.png" width="350" >
+  <img src="imgs/stats2.png" width="350" >
+</p>
+
+<strong>Bonus: work with git and upload files to Github, have at least 3 commits. Provide link</strong>
+<h3>Done✓</h3>
+
+<strong>Bonus: apply Design patterns: MVC, SOLID, or others</strong>  
+<h3>Done✓</h3>
+
+<strong>Bonus: suggest future improvement for your game in 3 sentences</strong>  
+<h3>Done✓</h3>
+
+<strong>Advanced: implement “Random thought” feature (anytime while game is running you can hear “Random though” of the main character), consider parallel thread</strong>  
+<h3>Done✓</h3>
