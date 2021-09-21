@@ -33,7 +33,7 @@ go home to relax and restore hp.
 Exit from a game
 
 <h2>Classes:</h2>
-<strong>Application:</strong>  
+<strong>Application:</strong>     
 Application it is a class where all logic located. Main menu, fighting and other stuff.
 
 <strong>Character:</strong>  
@@ -64,15 +64,16 @@ You can find all codes in this repository
   <img src="imgs/log2.png" width="350" >
   <img src="imgs/stats2.png" width="350" >
 </p>
-
+<hr>
 <h3>Bonus: work with git and upload files to Github, have at least 3 commits. Provide link</h3>
 <h3>Done✓</h3>
-
+<hr>
 <h3>Bonus: apply Design patterns: MVC, SOLID, or others</h3>  
 <h3>Done✓</h3>
-
+<hr>
 <h3>Bonus: suggest future improvement for your game in 3 sentences</h3>  
 <h3>Done✓</h3>
-
+<hr>
 <h3>Advanced: implement “Random thought” feature (anytime while game is running you can hear “Random though” of the main character), consider parallel thread</h3>  
 <h3>Done✓</h3>
+<hr>
