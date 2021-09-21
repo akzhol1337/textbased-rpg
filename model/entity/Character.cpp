@@ -14,6 +14,7 @@ Character::Character(int hp, std::string name, int atk) {
     this->level = 0;
     this->gold = 0;
     this->alive = true;
+    this->kills = 0;
 }
 
 std::vector<Item>& Character::getInventory(){
@@ -82,4 +83,5 @@ Character::Character(int hp, const string &name, int atk, int gold, int level) :
     this->Atk = atk;
     this->exp = 0;
     this->alive = true;
+    this->kills = 0;
 }

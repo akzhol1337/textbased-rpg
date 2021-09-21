@@ -94,7 +94,7 @@ void Application::relax(Character &mainCharacter) {
 }
 
 void Fight(Character &mainCharacter, Character &enemyCharacter){
-    bool win = mainCharacter.fight(enemyCharacter);
+
     printf("********************************\n");
 
     printf("* Welcome to battle field\n");
@@ -108,8 +108,9 @@ void Fight(Character &mainCharacter, Character &enemyCharacter){
            "   \\___/ /_______  /\n"
            "                 \\/ \n\n");
 
+    printf("----------------------------------\n");
     cout << enemyCharacter.name << "\n";
-
+    bool win = mainCharacter.fight(enemyCharacter);
     if(win) {
 
         mainCharacter.gold += enemyCharacter.gold;
