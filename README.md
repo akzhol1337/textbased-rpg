@@ -35,7 +35,7 @@ Exit from a game
 
 <h2>Classes:</h2>
 <hr>
-<strong>Application:</strong>     
+<strong>Application:</strong>     <br>    
 Application it is a class where all logic located. Main menu, fighting and other stuff.
 
 <strong>Character:</strong>  
