@@ -3,6 +3,8 @@
 #include <vector>
 #include <iostream>
 
+using namespace std;
+
 Character::Character(int hp, std::string name, int atk) {
     this->maxHP = hp;
     this->HP = hp;
@@ -22,6 +24,21 @@ void Character::checkLvl() {
         exp -= 100;
         level++;
     }
+}
+
+void Character::showCharacter(int num) {
+    cout << "--------------------------------\n";
+    cout << "- #"<< num << ": " << name << "\n";
+    cout << "- level: " << level << "\n";
+    cout << "- balance: " << gold << "\n";
+}
+
+void Character::addtoInventory(Item newItem) {
+    inventory.push_back(newItem);
+}
+
+Item Character::getInventoryById(int id) {
+    return inventory[id];
 }
 
 bool Character::fight(Character &enemy) {

@@ -50,17 +50,15 @@ Character *Application::createPerson() {
 }
 
 void Application::discoverMap(Character &mainCharacter, Country &country) {
-    printf("Welcome to Berland!!!\n");
+    printf("\nWelcome to Berland!!!\n\n");
 
     vector<City> cities = country.cities;
     int num = 0;
     for(City &city : cities){
-        printf("------------------\n");
-        cout << "--- #" << num << ":" << city.title << "---\n";
-        printf("--- %d citizens living --\n", (int)city.citizens.size());
-        printf("-----------------\n\n");
         num++;
+        city.showCity(num);
     }
+    printf("--------------------------------\n");
 
     int choice;
     printf("Choose city to go!");
@@ -69,29 +67,115 @@ void Application::discoverMap(Character &mainCharacter, Country &country) {
     exploreCity(mainCharacter, cities[choice]);
 }
 
-void Application::exploreCity(Character &mainCharacter, City &city) {
-    cout << "Welcome to " << city.title << "\n";
-    printf("We have %d citizens in our city\n", (int)city.citizens.size());
+void Fight(Character &mainCharacter, Character &enemyCharacter){
+    bool win = mainCharacter.fight(enemyCharacter);
+    printf("********************************\n");
 
-    printf("----------------------------\n");
+    printf("* Welcome to battle field\n");
+    printf("       ////^\\\\\\\\\n"
+           "      | ^   ^ |\n"
+           "     @ (o) (o) @\n"
+           "      |   <   |\n"
+           "      |  ___  |\n"
+           "       \\_____/\n"
+           "     ____|  |____\n"
+           "    /    \\__/    \\\n"
+           "   /              \\\n"
+           "  /\\_/|        |\\_/\\\n"
+           " / /  |        |  \\ \\\n"
+           "( <   |        |   > )\n"
+           " \\ \\  |        |  / /\n"
+           "  \\ \\ |________| / /\n"
+           "   \\ \\|\n"
+           "             \n"
+           "___  ________\n"
+           "\\  \\/ /  ___/\n"
+           " \\   /\\___ \\ \n"
+           "  \\_//____  >\n"
+           "          \\/\n "
+           "                 ,#####,\n"
+           "                 #_   _#\n"
+           "                 |a` `a|\n"
+           "                 |  u  |\n"
+           "                 \\  =  /\n"
+           "                 |\\___/|\n"
+           "        ___ ____/:     :\\____ ___\n"
+           "      .'   `.-===-\\   /-===-.`   '.\n"
+           "     /      .-\"\"\"\"\"-.-\"\"\"\"\"-.      \\\n"
+           "    /'             =:=             '\\\n"
+           "  .'  ' .:    o   -=:=-   o    :. '  `.\n"
+           "  (.'   /'. '-.....-'-.....-' .'\\   '.)\n"
+           "  /' ._/   \".     --:--     .\"   \\_. '\\\n"
+           " |  .'|      \".  ---:---  .\"      |'.  |\n"
+           " |  : |       |  ---:---  |       | :  |\n"
+           "  \\ : |       |_____._____|       | : /\n"
+           "  /   (       |----|------|       )   \\\n"
+           " /... .|      |    |      |      |. ...\\\n"
+           "|::::/'' jgs /     |       \\     ''\\::::|\n"
+           "'\"\"\"\"       /'    .L_      `\\       \"\"\"\"'\n"
+           "           /'-.,__/` `\\__..-'\\\n"
+           "          ;      /     \\      ;\n"
+           "          :     /       \\     |\n"
+           "          |    /         \\.   |\n"
+           "          |`../           |  ,/\n"
+           "          ( _ )           |  _)\n"
+           "          |   |           |   |\n"
+           "          |___|           \\___|\n"
+           "          :===|            |==|\n"
+           "           \\  /            |__|\n"
+           "           /\\/\\           /\"\"\"`8.__\n"
+           "           |oo|           \\__.//___)\n"
+           "           |==|\n"
+           "           \\__/\n");
+
+    printf("*****************************\n");
+    if(win) {
+
+        mainCharacter.gold += enemyCharacter.gold;
+        mainCharacter.level += enemyCharacter.level;
+
+        printf("\n\nCongratz, you win!!!!\n");
+        printf("You gain: %d levels, %d gold\n", enemyCharacter.level, enemyCharacter.gold);
+        printf("His inventory :\n");
+
+        int num = 0;
+
+        for(auto &to : enemyCharacter.getInventory()){
+            cout << "#" << num << ": " << to.item << ", damage: " << to.weight << "\n";
+        }
+
+        printf("Input a item to choose, -1 to return\n");
+        int choice;
+        cin >> choice;
+        if(choice == -1)
+            return;
+        mainCharacter.addtoInventory(enemyCharacter.getInventoryById(choice));
+    } else {
+        printf("\n\nLose\n");
+    }
+}
+
+void Application::exploreCity(Character &mainCharacter, City &city) {
+    cout << "------------------------------------------------------------\n\n";
+    cout << "Welcome to " << city.title << "\n";
+    printf("We have %d citizens in our city\n\n", (int)city.citizens.size());
 
     int num = 0;
     for(Character &character : city.citizens){
-        printf("------------\n");
-        cout << "#" << num << ": " << "Name: " << character.name << "\n";
-        cout << "level: " << character.level << "\n";
-        printf("------------\n");
+        num++;
+        character.showCharacter(num);
     }
 
-    printf("You wanna fight? (y/n)");
+    printf("You wanna fight? (y/n): \n");
     char choice;
     cin >> choice;
+    printf("\n");
 
     if(choice == 'y'){
         printf("Choose an enemy\n");
         int enemyId;
         scanf("%d", &enemyId);
-
+        Fight(mainCharacter, city.citizens[enemyId-1]);
     } else {
         return;
     }

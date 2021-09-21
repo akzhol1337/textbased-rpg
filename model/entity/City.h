@@ -11,6 +11,7 @@ public:
     std::vector<Character> citizens;
 
     City(std::string title);
+    void showCity(int num);
     void addCitizen(Character citizen);
 };
 

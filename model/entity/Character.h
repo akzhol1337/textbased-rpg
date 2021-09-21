@@ -20,6 +20,9 @@ public:
 
     std::vector<Item> getInventory();
     void checkLvl();
+    void showCharacter(int num);
+    void addtoInventory(Item newItem);
+    Item getInventoryById(int id);
     bool fight(Character &enemy);
     void rest();
 private:
