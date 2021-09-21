@@ -39,6 +39,8 @@ string
 /Users/undefined/CLionProjects/textbased-rpg/view/Application.cpp
 Application.h
 /Users/undefined/CLionProjects/textbased-rpg/view/Application.h
+../model/entity/Item.h
+/Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.h
 ../model/entity/Character.h
 /Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.h
 ../model/entity/Country.h
@@ -51,4 +53,6 @@ bits/stdc++.h
 /Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.h
 ../model/entity/Country.h
 /Users/undefined/CLionProjects/textbased-rpg/model/entity/Country.h
+vector
+-
 

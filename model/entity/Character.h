@@ -15,11 +15,13 @@ public:
     int gold;
     int exp;
     int level;
+    int kills;
 
     Character(int hp, std::string name, int atk);
 
-    std::vector<Item> getInventory();
+    std::vector<Item> &getInventory();
     void checkLvl();
+    void showStatistics();
     void showCharacter(int num);
     void addtoInventory(Item newItem);
     Item getInventoryById(int id);

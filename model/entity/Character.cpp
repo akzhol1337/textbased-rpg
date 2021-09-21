@@ -15,22 +15,32 @@ Character::Character(int hp, std::string name, int atk) {
     this->alive = true;
 }
 
-std::vector<Item> Character::getInventory(){
+std::vector<Item>& Character::getInventory(){
     return this->inventory;
 };
 
+void Character::showStatistics() {
+    printf("*************************\n");
+    cout << "* Statistics for " << name << "\n";
+    printf("* HP: %d/%d\n", HP, maxHP);
+    printf("* Damage: %d/hit\n", Atk);
+    printf("* Level: %d\n", level);
+    printf("* Kills: %d\n", kills);
+    printf("* Gold: %d\n", gold);
+    printf("*************************\n");
+}
+
 void Character::checkLvl() {
-    if(exp >= 100){
-        exp -= 100;
-        level++;
-    }
+    level += exp / 100;
+    exp %= 100;
 }
 
 void Character::showCharacter(int num) {
     cout << "--------------------------------\n";
     cout << "- #"<< num << ": " << name << "\n";
-    cout << "- level: " << level << "\n";
-    cout << "- balance: " << gold << "\n";
+    cout << "- Level: " << level << "\n";
+    cout << "- Balance: " << gold << "\n";
+    cout << "- Kills: " << kills << "\n";
 }
 
 void Character::addtoInventory(Item newItem) {

@@ -7,8 +7,12 @@
 class Item {
 public:
     std::string item;
+    int damage;
     int price;
-    int weight;
+
+    Item(const std::string &item, int damage, int price);
+
+    void showItem(int num);
 };
 
 
