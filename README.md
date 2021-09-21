@@ -65,14 +65,14 @@ You can find all codes in this repository
   <img src="imgs/stats2.png" width="350" >
 </p>
 
-<strong>Bonus: work with git and upload files to Github, have at least 3 commits. Provide link</strong>
+<h3>Bonus: work with git and upload files to Github, have at least 3 commits. Provide link</h3>
+<h3 style="color: #2ecc71;">Done✓</h3>
+
+<h3>Bonus: apply Design patterns: MVC, SOLID, or others</h3>  
 <h3>Done✓</h3>
 
-<strong>Bonus: apply Design patterns: MVC, SOLID, or others</strong>  
+<h3>Bonus: suggest future improvement for your game in 3 sentences</h3>  
 <h3>Done✓</h3>
 
-<strong>Bonus: suggest future improvement for your game in 3 sentences</strong>  
-<h3>Done✓</h3>
-
-<strong>Advanced: implement “Random thought” feature (anytime while game is running you can hear “Random though” of the main character), consider parallel thread</strong>  
+<h3>Advanced: implement “Random thought” feature (anytime while game is running you can hear “Random though” of the main character), consider parallel thread</h3>  
 <h3>Done✓</h3>
