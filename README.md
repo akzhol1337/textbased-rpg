@@ -1,6 +1,6 @@
-Technical Specification\
+Technical Specification
 
-1.Creation of new character\
+1.Creation of new character
 
 In the beginning you have three choices, to start a new game, to start a saved game and to exit. \
 The saved games, it is just option that we may add to game in the future. \
