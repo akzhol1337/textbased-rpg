@@ -66,7 +66,7 @@ You can find all codes in this repository
 </p>
 
 <h3>Bonus: work with git and upload files to Github, have at least 3 commits. Provide link</h3>
-<h3 style="color: #2ecc71;">Done✓</h3>
+<h3>Done✓</h3>
 
 <h3>Bonus: apply Design patterns: MVC, SOLID, or others</h3>  
 <h3>Done✓</h3>
