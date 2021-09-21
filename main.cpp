@@ -1,8 +1,23 @@
 #include <iostream>
+#include <thread>
 #include "view/Application.h"
 #include "model/entity/Country.h"
 
 using namespace std;
+
+void Thoughts(){
+    string thoughts[5] = { "I haven't eaten in almost 8 hours.",
+                           "I want to sleep.",
+                           "However, it is cold today.",
+                           "I will overcome enemies and become the strongest.",
+                           "I ought to go to my parents somehow."};
+    srand( time( 0 ) );
+    for(size_t i = 0; i<=5; i++){
+        cout<<"\n      -       \n"<<thoughts[rand()%4]<<"\n      -       \n";
+        this_thread::sleep_for(chrono::milliseconds(15000));
+    }
+}
+
 
 Country setGeography(){
     Country Berland("Berland");
@@ -39,6 +54,11 @@ Country setGeography(){
 }
 
 int main() {
+
+    thread th (Thoughts);
+    th.detach();
+
+
     Application *app = new Application();
 
     Country Berland = setGeography();
