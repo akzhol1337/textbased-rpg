@@ -82,3 +82,11 @@ void Character::rest() {
     }
     std::cout<<"now, i am ready to fight, sir. \n";
 }
+
+Character::Character(int hp, const string &name, int atk, int gold, int level) : HP(hp), name(name), Atk(atk),
+                                                                                 gold(gold), level(level) {
+    this->maxHP = hp;
+    this->Atk = atk;
+    this->exp = 0;
+    this->alive = true;
+}

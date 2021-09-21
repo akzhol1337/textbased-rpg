@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.cpp
-Character.h
-/Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.h
-Item.h
-/Users/undefined/CLionProjects/textbased-rpg/model/entity/Item.h
-vector
--
-iostream
--
-
 /Users/undefined/CLionProjects/textbased-rpg/model/entity/Character.h
 vector
 -

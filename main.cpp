@@ -22,15 +22,24 @@ void Thoughts(){
 
 Country setGeography(){
     Country Berland("Berland");
-    Character Muha(70, "Nurmukhammed", 37);
-    Character Raiko(75, "Rayimbek", 43);
-    Character Altosh(50, "Altynbek", 50);
-    Character Nurgiss(60, "Nurgisa", 40);
-    Character Tima(90, "Timur", 50);
-    Character Gani(120, "Gani", 15);
-    Character Adik(60, "Adilet", 35);
-    Character Ilyas(65, "Ilyas", 45);
-    Character Duldiev(70, "Rayimbek", 30);
+    Character Muha(70, "Nurmukhammed", 37, 150, 5);
+    Character Raiko(75, "Rayimbek", 43, 250, 10);
+    Character Altosh(50, "Altynbek", 50, 100, 3);
+    Character Nurgiss(60, "Nurgisa", 40, 5050, 53);
+    Character Tima(90, "Timur", 50, 0, 30);
+    Character Gani(120, "Gani", 15, 2, 10);
+    Character Adik(60, "Adilet", 35, 500, 7);
+    Character Ilyas(65, "Ilyas", 45, 1500, 25);
+    Character Duldiev(70, "Rayimbek", 30, 10000, 81);
+
+    Muha.addtoInventory(*new Item("Knife", 150, 500));
+    Raiko.addtoInventory(*new Item("Bic", 5, 15));
+    Altosh.addtoInventory(*new Item("AWP", 415, 4750));
+    Tima.addtoInventory(*new Item("he grenade", 150, 350));
+    Gani.addtoInventory(*new Item("Laser sword", 1500, 30000));
+    Adik.addtoInventory(*new Item("HE", 300, 800));
+    Ilyas.addtoInventory(*new Item("Axe", 75, 150));
+    Duldiev.addtoInventory(*new Item("Bow", 150, 350));
 
     City Amegakure("Amegakure");
     Amegakure.addCitizen(Muha);

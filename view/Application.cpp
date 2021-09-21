@@ -116,6 +116,8 @@ void Fight(Character &mainCharacter, Character &enemyCharacter){
         mainCharacter.level += enemyCharacter.level;
         mainCharacter.kills++;
 
+        enemyCharacter.alive = false;
+
         printf("\n\nCongratz, you win!!!!\n");
         printf("You gain: %d exp, %d gold\n", enemyCharacter.level * 10, enemyCharacter.gold);
 
@@ -157,7 +159,9 @@ void Application::exploreCity(Character &mainCharacter, City &city) {
     int num = 0;
     for(Character &character : city.citizens){
         num++;
-        character.showCharacter(num);
+        if(character.alive) {
+            character.showCharacter(num);
+        }
     }
 
     printf("You wanna fight? (y/n): \n");

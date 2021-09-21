@@ -19,6 +19,8 @@ public:
 
     Character(int hp, std::string name, int atk);
 
+    Character(int hp, const std::string &name, int atk, int gold, int level);
+
     std::vector<Item> &getInventory();
     void checkLvl();
     void showStatistics();
