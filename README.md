@@ -1,6 +1,5 @@
 Technical Specification
-
-1.Creation of new character
+Creation of new character
 
 In the beginning you have three choices, to start a new game, to start a saved game and to exit. 
 The saved games, it is just option that we may add to game in the future. 
@@ -13,10 +12,8 @@ Firstly, there is a country. Here you will choose the city, then also enemies in
 And if you win the enemy, main character will level up, gain experience and gold. 
 Also, you can take the weapons of enemy by adding to inventory.
 
-
 2.Inventory: Shows inventory of character.  And character can store only best 3 items. 
 Also, each item has damage, depending on this damage the price will increase. Item from inventory increases total damage of a character.
-
 
 3.Statistics: Shows statistics. It’s just showing information about main character. HP, gold, damage and other stuff.
 
@@ -27,3 +24,31 @@ Also, each item has damage, depending on this damage the price will increase. It
 6.Go home. go home to relax and restore hp. 
 
 7.Quit.
+
+Classes:
+Application:
+Application it is a class where all logic located. Main menu, fighting and other stuff.
+
+Character:
+Character is class which stores information and methods of characters. Information like hp, damage and other.
+Methods like add item to inventory, show Statistics, check if we may level up, etc.
+
+Item:
+It’s information about weapon. We store fields like name, damage, and price.
+
+Country:
+In this class we store a name of country and a list of cities.
+
+City:
+In the city we store name and citizens just like in country class, also there are a method to show information about city and add citizens to it.
+
+
+Codes:
+You can find all codes in this repository
+
+Provide 4 screenshots:
+
+<p align="center">
+  <img src="imgs/log1.jpeg" width="350" >
+  <img src="imgs/stats1.png" width="350" >
+</p>
