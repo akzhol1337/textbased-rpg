@@ -53,11 +53,19 @@ Item Character::getInventoryById(int id) {
 
 bool Character::fight(Character &enemy) {
     for(;;){
-        enemy.HP -= this->Atk;
+
+        printf("Your hit\n");
+        enemy.HP -= Atk;
+        printf("Enemy's hp %d/%d\n\n", max(0, enemy.HP), enemy.maxHP);
+
         if(enemy.HP <= 0){
+            enemy.alive = false;
             enemy.HP = 0;
             return true;
         }
+
+        printf("Enemy's hit\n");
+        printf("Your hp: %d/%d\n\n", max(0, HP), maxHP);
         this->HP -= enemy.Atk;
         if(this->HP <= 0){
             this->HP = 0;

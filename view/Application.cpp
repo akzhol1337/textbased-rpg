@@ -145,6 +145,7 @@ void Fight(Character &mainCharacter, Character &enemyCharacter){
                " / /_/  > __ \\|  Y Y  \\  ___/  (  <_> )   /\\  ___/|  | \\/\n"
                " \\___  (____  /__|_|  /\\___  >  \\____/ \\_/  \\___  >__|   \n"
                "/_____/     \\/      \\/     \\/                   \\/       \n");
+        exit(0);
     }
 }
 

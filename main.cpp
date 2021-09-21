@@ -6,14 +6,15 @@
 using namespace std;
 
 void Thoughts(){
-    string thoughts[5] = { "I haven't eaten in almost 8 hours.",
-                           "I want to sleep.",
-                           "However, it is cold today.",
-                           "I will overcome enemies and become the strongest.",
-                           "I ought to go to my parents somehow."};
-    srand( time( 0 ) );
-    for(size_t i = 0; i<=5; i++){
-        cout<<"\n      -       \n"<<thoughts[rand()%4]<<"\n      -       \n";
+    string thoughts[5] = { "\nYou don't remember me? We spoke on the phone...I told you I would find you\n",
+                           "\nThere Are Fates Worse Than Death!\n",
+                           "\ni will find you, and i will kill you\n",
+                           "\nlease understand... it was all business. It wasn't personal.\n",
+                           "\nMom said your job made you paranoid\n"
+    };
+    srand( NULL);
+    for(int i = 0; i<=5; i++){
+        cout<<thoughts[rand()%4];
         this_thread::sleep_for(chrono::milliseconds(15000));
     }
 }
