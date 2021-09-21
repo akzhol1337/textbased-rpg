@@ -89,7 +89,7 @@ void Application::work(Character &mainCharacter) {
 }
 
 void Application::relax(Character &mainCharacter) {
-    printf("Uhhmm, now I am ready to fight, sir. HP:%d/%d", mainCharacter.maxHP, mainCharacter.maxHP);
+    printf("Uhhmm, now I am ready to fight, sir. HP:%d/%d\n", mainCharacter.maxHP, mainCharacter.maxHP);
     mainCharacter.HP = mainCharacter.maxHP;
 }
 

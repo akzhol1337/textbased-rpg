@@ -12,6 +12,7 @@ Character::Character(int hp, std::string name, int atk) {
     this->Atk = atk;
     this->exp = 0;
     this->level = 0;
+    this->gold = 0;
     this->alive = true;
 }
 
@@ -74,14 +75,6 @@ bool Character::fight(Character &enemy) {
     }
 }
 
-void Character::rest() {
-    HP = maxHP;
-    std:: cout << "resting..\n\n\n";
-    for(int i = 0; i < 1000000000; i++){
-
-    }
-    std::cout<<"now, i am ready to fight, sir. \n";
-}
 
 Character::Character(int hp, const string &name, int atk, int gold, int level) : HP(hp), name(name), Atk(atk),
                                                                                  gold(gold), level(level) {

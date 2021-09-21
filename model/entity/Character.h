@@ -28,7 +28,6 @@ public:
     void addtoInventory(Item newItem);
     Item getInventoryById(int id);
     bool fight(Character &enemy);
-    void rest();
 private:
     std::vector<Item> inventory;
 };
